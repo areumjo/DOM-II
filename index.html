@@ -80,6 +80,16 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+    <form>
+      <input style="text" value="select me" placeholder="input" id="search_input" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+    </form>
+    <div class="dropzone">
+      <div id="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+        Draggable
+      </div> 
+    </div> 
+    <div id="droppable" class="dropzone">Drop zone</div>
+
   </div><!-- container -->
 
   <footer class="footer">
