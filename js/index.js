@@ -124,6 +124,7 @@ const workBtn = document.querySelector('.btn');
 workBtn.addEventListener('dblclick', function(eventObject){
     console.log(`button is on fire!`);
     workBtn.style.backgroundColor = "navy";
+    TweenMax.to(".btn", 2, {borderWidth: "thick", scale: 1.25, x: 100}); // add GSAP (JS animation)
 });
 
 const allBtn = document.querySelectorAll('.btn');
@@ -145,3 +146,12 @@ form.addEventListener('focus', (event) => {
 const welcome = document.querySelector(".intro h2");
 form.addEventListener("select", () => form.style.color = "white");
 
+
+// bus-imag - add GSAP yoyo function
+
+const busIma = document.querySelector(".intro img");
+
+busIma.addEventListener('click', () => {
+    busIma.style.border = "1px black solid";
+    TweenMax.to(".intro img", 1, {x:100, repeat:3, yoyo:true});
+})
