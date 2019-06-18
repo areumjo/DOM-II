@@ -80,11 +80,23 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+    <form>
+      <input style="text" value="select me" placeholder="input" id="search_input" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+    </form>
+    <div class="dropzone">
+      <div id="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+        Draggable
+      </div> 
+    </div> 
+    <div id="droppable" class="dropzone">Drop zone</div>
+
   </div><!-- container -->
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 </body>
 </html>
